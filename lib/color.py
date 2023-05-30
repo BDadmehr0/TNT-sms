@@ -1,5 +1,5 @@
 class c:
-    def Regular_Colors:
+    def regular_colors():
         Black = "\e[0;30m"
         Red = "\e[0;31m"
         Green = "\e[0;32m" 
@@ -8,3 +8,5 @@ class c:
         Purple = "\e[0;35m"
         Cyan = "\e[0;36m"
         White = "\e[0;37m"
+    def bold():
+
