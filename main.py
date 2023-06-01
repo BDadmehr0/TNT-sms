@@ -4,7 +4,7 @@ import platform
 from time import sleep
 import os
 
-install_update():
+def install_update():
     os.system('pip install requstes')
     #try:
         # install requstes
@@ -13,7 +13,7 @@ install_update():
         
 
 
-sys_chck():
+def sys_check():
     os_n = platform.system()
     print(os_n)
 
