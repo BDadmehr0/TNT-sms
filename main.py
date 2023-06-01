@@ -5,7 +5,7 @@ from time import sleep
 import os
 
 def install_update():
-    os.system('pip install requstes')
+    os.system('sudo pip install -r requirements.txt')
     #try:
         # install requstes
     #    os.system('pip install requstes')
