@@ -5,7 +5,12 @@ from time import sleep
 import os
 
 install_update():
-    try:
+    os.system('pip install requstes')
+    #try:
+        # install requstes
+    #    os.system('pip install requstes')
+    #except:
+        
 
 
 sys_chck():
@@ -25,7 +30,7 @@ def banner():
 def main():
 
 if __name__ == "__main__":
-
+    install_update()
     os.system('clear')
-    menu()
-    main()
+    #menu()
+    #main()
