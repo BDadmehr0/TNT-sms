@@ -28,9 +28,8 @@ def banner():
 
 
 def main():
-
+    pass
 if __name__ == "__main__":
     install_update()
-    os.system('clear')
     #menu()
     #main()
