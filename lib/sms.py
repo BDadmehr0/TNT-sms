@@ -8,6 +8,14 @@ from fake_useragent import UserAgent
 # ua = UserAgent()
 # user = ua.random
 # print(user)
+range_n_limet = 100
 
-def send(phone_number,range_n,user_agent): # add prvity Change IP
+def send(phone_number,range_n): # add prvity Change IP
     pass
+
+import json
+
+with open('./API/sms.json') as json_file:
+    data = json.load(json_file)
+
+print(data)
