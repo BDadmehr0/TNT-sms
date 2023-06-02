@@ -57,6 +57,7 @@ def main():
             print(about)
         elif menu_i == 'U' or menu_i == 'u':
             # +_+_+_+ Update +_+_+_+
+            pass
         elif menu_i == '00':
             exit()
 
