@@ -1,21 +1,23 @@
-import platform
-from time import sleep
-import os
-from lib import color
+# Dadmher - Garfox
 
-C = color.c_s()
-
-def install_update():
+def install():
     try:
-        #install requstes
-        os.system('pip install requstes')
+        #install form req.txt in lib dic
+        os.system('pip install -r ./lib/requirements.txt')
+        import platform
+        from time import sleep
+        import os
+        from colorama import Fore, Style
     except:
-        print(C.RED+'Installion Failed')
-        
+        print(Fore.RED+'Installion Failed')
 
 
+def sys_check(os_n):
     os_n = platform.system()
-    print(C.RED+""+os_n)
+    if os_n == 'Linux':
+        print(Fore.GREEN+'System-Guard: Cehck and accepted')
+    else:
+        print(Foe.RED+'System_Guard: Check and not accepted')
 
 def banner():
     asci = '''
