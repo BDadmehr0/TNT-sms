@@ -10,6 +10,7 @@ import json
 # user = ua.random
 # print(user)
 
+
 range_n_limet = 100
 
 def send(phone_number,range_n): # add prvity Change IP
@@ -18,4 +19,14 @@ def send(phone_number,range_n): # add prvity Change IP
 with open('./API/sms.json') as json_file:
     data = json.load(json_file)
 
-print(data['url'])
+url_data = data['filimo']
+
+url = url_data['url']
+data = url_data['data']
+
+print(data, url)
+
+s = requests.Session()
+res = s.post(url, data)
+
+print(res)

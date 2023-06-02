@@ -1,4 +1,16 @@
 {
-    "url" : "https://rirabook.com/loginAth",
-    "data" : "mobile1=numnum&loginbt1="
+    "rirabook": {
+        "url": "https://rirabook.com/loginAth",
+        "data": "mobile1=numnum&loginbt1="
+    },
+
+    "doctoreto": {
+	    "url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
+        "data" : {
+            "mobile":"9050756226",
+            "country_id":"205",
+            "captcha":""
+        }
+    }
+
 }
