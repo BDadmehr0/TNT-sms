@@ -5,8 +5,9 @@ import random
 import json
 import re
 
+from lib import Banner
 from fake_useragent import UserAgent
-import Banner
+
 range_n_limit = 100
 cunt = 0
 services = ['rirabook', 'doctoreto']
@@ -62,5 +63,4 @@ def send(phone_number, range_n):  # add prvity Change IP
         print('Send Range Limit 100')
 
 
-if __name__ == "__main__":
-    banner = Banner.banner()
+banner = Banner.banner()

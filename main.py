@@ -1,14 +1,14 @@
 # Dadmher - Garfox
 
 try:
+
     import platform
     import os
+
     from time import sleep
     from colorama import Fore as c
     from lib import Banner
     from lib import sms
-
-    banner = Banner.banner()
 except:
     print('Missing Library')
 
@@ -43,7 +43,7 @@ def sms_menu():
             phone_number = input('Phone-Number$: ')
             range_n = input('Send-Reange$: ')
 
-            sned_sms = sms.send(phone_number, range_n)
+            sms.send(phone_number,range_n)
         elif menu_i == '2':
             print('Unknown')
         elif menu_i == '3':
