@@ -48,14 +48,16 @@ def menu():
 
 def main():
     menu()
+    about = "SMSTNT is a program for Linux that will be transferred to Telegram bot and Termox in the future
+We want to extract many APIs from Iranian sites and use them to send SMS. Also, the important part of this issue is that the sites do not limit us, for which I have made other plans, such as changing the IP address or user agents."
     while True:
         menu_i = input('menu-$ ')
         if menu_i == '1':
             main_menu()
         elif menu_i == '2':
-            about()
+            print(about)
         elif menu_i == 'U' or menu_i == 'u':
-            os.system("cd && rm -rf TNT-sms && git clone https://github.com/BDadmehr0/TNT-sms && cd TNT-sms && python3 main.py")
+            # +_+_+_+ Update +_+_+_+
         elif menu_i == '00':
             exit()
 
