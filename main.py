@@ -5,7 +5,6 @@ try:
     import os
     from time import sleep
     from colorama import Fore
-    from lib import configs
 except:
     print('Missing Library')
 
@@ -32,13 +31,14 @@ def banner():
    @!!   @!@@!!@!   @!!         !@@!!  @!! !!@ @!@  !@@!!  | https://github.com/BDadmehr0
    !!:   !!:  !!!   !!:            !:! !!:     !!:     !:! | TNTsms Call & SMS Spamer (IR number)
     :    ::    :     :         ::.: :   :      :   ::.: :  | By Dadmehr with Coffee'''
-    sleep(3)
 
 
 def main():
-    banner = configs.banner()
+    
 
 if __name__ == "__main__":
+    banner()
+    sleep(3)
     install()
     os.system('clear')
     sys_check()
