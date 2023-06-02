@@ -4,6 +4,7 @@ import requests
 import random
 from fake_useragent import UserAgent
 import json
+import re
 
 range_n_limit = 100
 cunt = 0
@@ -15,36 +16,50 @@ services = ['rirabook', 'doctoreto']
 # print(user_agent)
 
 
+def validate_phone_number(phone_number):
+    pattern = r'^09\d{9}$'
+    if re.match(pattern, phone_number):
+        return True
+    else:
+        return False
+
+
 def send(phone_number, range_n):  # add prvity Change IP
     global cunt  # تعریف متغیر global
+
+    # Validate phone number
+    if not validate_phone_number(phone_number):
+        print("Invalid Phone number")
+        return
 
     # Load lib/API/sms.json
     with open('./API/sms.json') as json_file:
         data = json.load(json_file)
+
+        # Replace phone number in data
         rep_data = str(data)
-        rep_data.replace('numnum',phone_number)
+        rep_data = rep_data.replace('numnum', phone_number)
         print(phone_number)
-        print(rep_data)
+
     if range_n <= range_n_limit:
-        cunt = 0
-        for service in services:
-            cunt += 1
+        for i in range(1, range_n + 1):
+            cunt = i
+            for service in services:
+                # convert service list to str
+                service_name = str(service)
+                print(service_name)
 
-            # convert service list to str
-            service_name = str(service)
-            print(service_name)
+                # load api
+                url_data = data[service_name]
 
-            # load api
-            url_data = data[service_name]
+                url = url_data['url']
+                req_data = url_data['data']
 
-            url = url_data['url']
-            req_data = url_data['data']
-
-
-            req = requests.post(url=url, data=req_data)
-            print(req, cunt)
+                req = requests.post(url=url, data=req_data)
+                print(req, cunt)
     else:
         print('Send Range Limit 100')
 
 
-send(phone_number='123456789', range_n=100)
+if __name__ == "__main__":
+    send(phone_number='09921211826', range_n=5)
