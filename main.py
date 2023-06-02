@@ -32,7 +32,7 @@ def banner():
     print(c.RED+'  @@! '+c.WHITE+' @@!@!@@'+c.RED+'   @@! '+c.WHITE+' !@@     @@! @@! @@! !@@')
     print(c.RED+'  @!! '+c.WHITE+' @!@@!!@'+c.RED+'   @!! '+c.WHITE+'  !@@!!  @!! !!@ @!@  !@@!!  | https://github.com/BDadmehr0')
     print(c.RED+'  !!: '+c.WHITE+' !!:  !!'+c.RED+'   !!: '+c.WHITE+'     !:! !!:     !!:     !:! | TNTsms Call, SMS Spamer IR')
-    print(c.RED+'   :  '+c.WHITE+' ::    : '+c.RED+'    :  '+c.WHITE+' ::.: :   :      :   ::.: :  | By BDadmehr0')
+    print(c.RED+'   :  '+c.WHITE+' ::    : '+c.RED+'    :  '+c.WHITE+' ::.: :   :      :   ::.: :  | By BDadmehr0\n')
 
     sleep(2)
 
@@ -43,7 +43,7 @@ def menu():
     print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' Start')
     print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' About')
     print(c.WHITE+' ['+c.RED+'U'+c.WHITE+']'+c.RED+' Update')
-    print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit')
+    print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit'+Fore.RESET+'')
 
 
 def main():
