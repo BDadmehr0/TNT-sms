@@ -3,7 +3,7 @@ from time import sleep
 import os
 from lib import color
 
-C = color.colors()
+C = color.c_s()
 
 def install_update():
     try:

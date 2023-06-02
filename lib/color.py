@@ -1,4 +1,4 @@
-def c_s:
+def c_s():
         #Background
     Bg_Black = "\e[40m"
     Bg_Red = "\e[41m"
