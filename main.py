@@ -1,21 +1,21 @@
-# BDadmehr0 - Garfox
-
 import platform
 from time import sleep
 import os
+from lib import color
+
+C = color.colors()
 
 def install_update():
-    os.system('sudo pip install -r requirements.txt')
-    #try:
-        # install requstes
-    #    os.system('pip install requstes')
-    #except:
+    try:
+        #install requstes
+        os.system('pip install requstes')
+    except:
+        print(C.RED+'Installion Failed')
         
 
 
-def sys_check():
     os_n = platform.system()
-    print(os_n)
+    print(C.RED+""+os_n)
 
 def banner():
     asci = '''
@@ -31,5 +31,7 @@ def main():
     pass
 if __name__ == "__main__":
     install_update()
+    ###os.system('clear')
     #menu()
     #main()
+

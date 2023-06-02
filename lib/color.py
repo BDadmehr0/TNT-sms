@@ -1,4 +1,4 @@
-class colors:
+def c_s:
         #Background
     Bg_Black = "\e[40m"
     Bg_Red = "\e[41m"
@@ -18,7 +18,6 @@ class colors:
     Cyan = "\e[0;36m"
     White = "\e[0;37m"
 
-class styles:
     #BOLD
     Bold_Black = "\e[1;30m"
     Bold_Red = "\e[1;31m"
