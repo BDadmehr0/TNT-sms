@@ -7,7 +7,7 @@
     "doctoreto": {
 	    "url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
         "data" : {
-            "mobile":"9050756226",
+            "mobile":"numnum",
             "country_id":"205",
             "captcha":""
         }
