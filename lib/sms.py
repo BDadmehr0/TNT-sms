@@ -2,10 +2,11 @@
 # packages
 import requests
 import random
-from fake_useragent import UserAgent
 import json
 import re
 
+from fake_useragent import UserAgent
+import Banner
 range_n_limit = 100
 cunt = 0
 services = ['rirabook', 'doctoreto']
@@ -25,7 +26,7 @@ def validate_phone_number(phone_number):
 
 
 def send(phone_number, range_n):  # add prvity Change IP
-    global cunt  # تعریف متغیر global
+    global cunt
 
     # Validate phone number
     if not validate_phone_number(phone_number):
@@ -49,7 +50,7 @@ def send(phone_number, range_n):  # add prvity Change IP
                 service_name = str(service)
                 print(service_name)
 
-                # load api
+                # load apos in sms.json
                 url_data = data[service_name]
 
                 url = url_data['url']
@@ -62,4 +63,4 @@ def send(phone_number, range_n):  # add prvity Change IP
 
 
 if __name__ == "__main__":
-    send(phone_number='09921211826', range_n=5)
+    banner = Banner.banner()
