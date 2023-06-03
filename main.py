@@ -9,7 +9,7 @@ try:
     from colorama import Fore as c
     from lib import Banner
     from lib import sms
-except:
+except ImportError:
     print('Missing Library')
 
 def install():
