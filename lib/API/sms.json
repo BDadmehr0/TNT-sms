@@ -64,6 +64,14 @@
         }
     },
 
+    "banimode": {
+	    "url" : "https://mobapi.banimode.com/api/v2/auth/request",
+        "data" : {
+            "phone": "09050756226"
+        }
+    },
+    
+
     "doctoreto": {
 	    "url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
         "data" : {
