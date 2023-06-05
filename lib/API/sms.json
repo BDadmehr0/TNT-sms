@@ -1,20 +1,53 @@
 {
     "rirabook": {
         "url": "https://rirabook.com/loginAth",
-        "data": "mobile1=numnum&loginbt1="
+        "data": {
+            "mobile1" : "numnum",
+            "loginbt1" : ""
+        }
     },
+
     "SMS.ir": {
-	"url" : "https://app.sms.ir/auth/sign-up?mobile=numnum",
-	 "data" : {
-	    "mobile":"numnum"
+	    "url" : "https://app.sms.ir/auth/sign-up?mobile=numnum",
+	    "data" : {
+	        "mobile" : "numnum"
     	}
     },
+
+    "vipshop": {
+        "url" : "https://vipshop.flowers/wp-admin/admin-ajax.php",
+        "data" : {
+            "action" : "logini_first",
+            "login" : "numnum"
+        }
+
+    },
+
+    "digikala" : {
+        "url" : "https://api.digikala.com/v1/user/authenticate/",
+        "data" : {
+            "backUrl" : "/",
+            "otp_call" : "false",
+            "username" : "numnum"
+        }
+    },
+
+    "okala" : {
+        "url" : "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
+        "data" : {
+            "confirmTerms": "true",
+            "deviceTypeCode": "0",
+            "mobile": "09050756226",
+            "notRobot": "false"
+        }
+    },
+
     "doctoreto": {
 	"url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
-        "data" : {
-            "mobile":"numnum",
-            "country_id":"205",
-            "captcha":""
+    "data" : {
+        "mobile":"numnum",
+        "country_id":"205",
+        "captcha":""
         }
     }
 
