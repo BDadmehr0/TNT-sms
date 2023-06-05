@@ -10,7 +10,7 @@
     "SMS.ir": {
 	    "url" : "https://app.sms.ir/auth/sign-up?mobile=numnum",
 	    "data" : {
-	        "mobile" : "numnum"
+	        "mobile" : "09050756226"
     	}
     },
 
@@ -18,7 +18,7 @@
         "url" : "https://vipshop.flowers/wp-admin/admin-ajax.php",
         "data" : {
             "action" : "logini_first",
-            "login" : "numnum"
+            "login" : "09050756226"
         }
 
     },
@@ -28,7 +28,7 @@
         "data" : {
             "backUrl" : "/",
             "otp_call" : "false",
-            "username" : "numnum"
+            "username" : "09050756226"
         }
     },
 
@@ -42,12 +42,21 @@
         }
     },
 
+    "basalam" : {
+        "url" : "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
+        "data" : {
+            "client_id": "11",
+            "mobile": "09050756226"
+        }
+    },
+
+
     "doctoreto": {
-	"url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
-    "data" : {
-        "mobile":"numnum",
-        "country_id":"205",
-        "captcha":""
+	    "url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
+        "data" : {
+            "mobile":"numnum",
+            "country_id":"205",
+            "captcha":""
         }
     }
 
