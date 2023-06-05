@@ -50,6 +50,19 @@
         }
     },
 
+    "bamiloshop" : {
+        "url" : "https://apollo.digify.shop/graphql",
+        "data" : {
+            "operationName":"OtpSendV2",
+            "variables":{
+                "content": {
+                    "phone_number":"09050756226",
+                    "is_forget_password":false
+                    }
+                },
+            "query":"mutation OtpSendV2($content: OTPSendContent) {\n  customer {\n    otpSendV2(content: $content) {\n      is_forget_password\n      is_register\n      __typename\n    }\n    __typename\n  }\n}"
+        }
+    },
 
     "doctoreto": {
 	    "url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
