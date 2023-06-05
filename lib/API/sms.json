@@ -3,9 +3,14 @@
         "url": "https://rirabook.com/loginAth",
         "data": "mobile1=numnum&loginbt1="
     },
-
+    "SMS.ir": {
+	"url" : "https://app.sms.ir/auth/sign-up?mobile=numnum",
+	 "data" : {
+	    "mobile":"numnum"
+    	}
+    },
     "doctoreto": {
-	    "url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
+	"url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
         "data" : {
             "mobile":"numnum",
             "country_id":"205",
