@@ -7,9 +7,9 @@ try:
 
     from time import sleep
     from colorama import Fore as c
-    from lib import Banner
-    from lib import sms
-except:
+    from lib.Banner import banner
+    from lib.sms import send
+except ImportError:
     print('Missing Library')
 
 def install():
@@ -43,7 +43,7 @@ def sms_menu():
             phone_number = input('Phone-Number$: ')
             range_n = input('Send-Reange$: ')
 
-            sms.send(phone_number,range_n)
+            send(phone_number,range_n)
         elif menu_i == '2':
             print('Unknown')
         elif menu_i == '3':
@@ -65,7 +65,7 @@ def main():
         menu_i = input('menu-$ ')
         if menu_i == '1':
             os.system('clear')
-            banner = Banner.banner()
+            banner()
             sms_menu()
         elif menu_i == '2':
             print(about)
@@ -78,11 +78,11 @@ def main():
 
 if __name__ == "__main__":
     os.system('clear')
-    banner = Banner.banner()
+    banner()
 
     install()
     sys_check()
     os.system('clear')
 
-    banner = Banner.banner()
+    banner()
     main()
