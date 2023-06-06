@@ -33,7 +33,7 @@
         "url" : "https://vipshop.flowers/wp-admin/admin-ajax.php",
         "data" : {
             "action" : "logini_first",
-            "login" : "09050756226"
+            "login" : "numnum"
         }
 
     },
@@ -43,7 +43,7 @@
         "data" : {
             "backUrl" : "/",
             "otp_call" : "false",
-            "username" : "09050756226"
+            "username" : "numnum"
         }
     },
 
