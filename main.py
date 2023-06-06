@@ -1,7 +1,6 @@
 # Dadmher - Garfox
 
 try:
-
     import platform
     import os
 
@@ -51,9 +50,15 @@ def sms_menu():
         elif menu_i == '00':
             exit()
 
+def setting_menu():
+    print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' Private Send [off]')
+    print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' User-Agent [on]')
+    print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit'+c.RESET+'\n')
+
 def menu():
     print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' Start')
     print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' About')
+    print(c.WHITE+' ['+c.RED+'3'+c.WHITE+']'+c.RED+' Settings')
     print(c.WHITE+' ['+c.RED+'U'+c.WHITE+']'+c.RED+' Update')
     print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit'+c.RESET+'\n')
 
