@@ -10,7 +10,7 @@
     "SMS.ir": {
 	    "url" : "https://app.sms.ir/auth/sign-up?mobile=numnum",
 	    "data" : {
-	        "mobile" : "09050756226"
+	        "mobile" : "numnum"
     	}
     },
 
@@ -37,7 +37,7 @@
         "data" : {
             "confirmTerms": "true",
             "deviceTypeCode": "0",
-            "mobile": "09050756226",
+            "mobile": "numnum",
             "notRobot": "false"
         }
     },
@@ -46,7 +46,7 @@
         "url" : "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
         "data" : {
             "client_id": "11",
-            "mobile": "09050756226"
+            "mobile": "numnum"
         }
     },
 
@@ -56,7 +56,7 @@
             "operationName":"OtpSendV2",
             "variables":{
                 "content": {
-                    "phone_number":"09050756226",
+                    "phone_number":"numnum",
                     "is_forget_password":false
                     }
                 },
@@ -67,7 +67,7 @@
     "banimode": {
 	    "url" : "https://mobapi.banimode.com/api/v2/auth/request",
         "data" : {
-            "phone": "09050756226"
+            "phone": "numnum"
         }
     },
     
