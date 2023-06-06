@@ -7,6 +7,21 @@
         }
     },
 
+    "snappfood": {
+        "url": "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.1&UDID=23edaab7-b7a3-4c6f-8046-665d0f8ff3be&locale=fa        ",
+        "data": {
+            "cellphone" : "09050756226"
+        }
+    },
+
+    "snapp": {
+        "url": "https://api.snapp.ir/api/v1/sms/link",
+        "data": {
+            "phone" : "09050756226"
+        }
+    },
+
+
     "SMS.ir": {
 	    "url" : "https://app.sms.ir/auth/sign-up?mobile=numnum",
 	    "data" : {
