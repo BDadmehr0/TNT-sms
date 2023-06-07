@@ -50,21 +50,19 @@ def sms_menu():
         elif menu_i == '00':
             exit()
 
-def setting_menu():
-    print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' Private Send [off]')
-    print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' User-Agent [on]')
-    print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit'+c.RESET+'\n')
+# def setting_menu():
+#     print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' Private Send [off]')
+#     print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' User-Agent [on]')
+#     print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit'+c.RESET+'\n')
 
-def menu():
+
+def main():
     print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' Start')
     print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' About')
     print(c.WHITE+' ['+c.RED+'3'+c.WHITE+']'+c.RED+' Settings')
     print(c.WHITE+' ['+c.RED+'U'+c.WHITE+']'+c.RED+' Update')
     print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit'+c.RESET+'\n')
-
-
-def main():
-    menu()
+    
     about = 'TNT-sms is a program for Linux that will be transferred to Telegram bot and Termox in the future We want to extract many APIs from Iranian sites and use them to send SMS. Also, the important part of this issue is that the sites do not limit us, for which I have made other plans, such as changing the IP address or user agents.'
     while True:
         menu_i = input('menu-$ ')
