@@ -12,8 +12,8 @@
         "data": {
             "digt_countrycode": "%2B98",
             "phone": "9050756226",
-            "digits_reg_name": "namename",
-            "digits_reg_password": "asdasdasdasd",
+            "digits_reg_name": "usernamename",
+            "digits_reg_password": "passwordword",
             "digits_process_register": "1",
             "instance_id": "355dbb36c6e4eb225d81183a543dbbe1",
             "optional_data": "optional_data",
