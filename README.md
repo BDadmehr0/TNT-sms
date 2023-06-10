@@ -17,6 +17,7 @@ We want to extract many APIs from Iranian sites and use them to send SMS. Also, 
 ## Installation
 
 ```bash
+chmod +x ./install.sh
 sudo ./install.sh 
 ```
 
