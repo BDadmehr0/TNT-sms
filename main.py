@@ -11,13 +11,6 @@ try:
 except ImportError:
     print('Missing Library')
 
-def install():
-    try:
-        #install form req.txt in lib dic
-        os.system('pip install -r ./lib/requirements.txt')
-    except:
-        print(c.RED+'Installion Failed')
-
 
 def sys_check():
     os_n = platform.system()
@@ -82,8 +75,7 @@ def main():
 if __name__ == "__main__":
     os.system('clear')
     banner()
-
-    install()
+    
     sys_check()
     os.system('clear')
 
