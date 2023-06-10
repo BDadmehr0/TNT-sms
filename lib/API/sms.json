@@ -42,7 +42,7 @@
         }
     },
 
-    "snapp": {
+    "s  napp": {
         "url": "https://api.snapp.ir/api/v1/sms/link",
         "data": {
             "phone": "09050756226"
