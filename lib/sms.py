@@ -10,7 +10,8 @@ from fake_useragent import UserAgent
 
 range_n_limit = 100
 cunt = 0
-services = ['rirabook', 'doctoreto','SMS.ir','vipshop','digikala','okala','basalam','banimode']
+services_rm = ['iranjahanpoosh']
+services = ['rirabook', 'iranjahanpoosh', 'doctoreto', 'SMS.ir', 'vipshop', 'digikala', 'okala', 'basalam', 'banimode', ]
 
 
 def validate_phone_number(phone_number):
@@ -45,6 +46,9 @@ def send(phone_number, range_n):  # add prvity Change IP
             ua = UserAgent()
             headers = {'User-Agent': ua.random}
             for service in services:
+                if service in services_rm:
+                    phone_number = phone_number.lstrip('0')
+
                 # convert service list to str
                 service_name = str(service)
                 print(service_name)
