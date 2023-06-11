@@ -1,8 +1,8 @@
 from requests import post
-url = "https://app.sms.ir/auth/sign-up?mobile=09050756226"
+
+link = 'https://www.sheypoor.com/api/v10.0.0/auth/send'
 data = {
-    "mobile": "09050756226"
+    "username": "09050756226"
 }
 
-res = post(url=url, data=data)
-print(res)
+print(post(url=link, data=data))

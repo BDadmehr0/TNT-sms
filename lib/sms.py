@@ -1,9 +1,9 @@
 # packages
 import requests
-import random
 import json
 import re
 
+from colorama import Fore as C
 from fake_useragent import UserAgent
 
 range_n_limit = 100
@@ -44,7 +44,9 @@ def send(phone_number, range_n):  # add prvity Change IP
                 req_data = req_data.replace('numnum', phone_number)
 
                 req = requests.post(url=url, data=req_data, headers=headers)
-
-                print(req)
+                if req.status_code == 200:
+                    print(C.GREEN+'Send')
+                else:
+                    print(C.RED+"Failed :", req.status_code)
     else:
         print('Send Range Limit 100')

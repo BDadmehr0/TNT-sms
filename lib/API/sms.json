@@ -6,6 +6,13 @@
         }
     },
 
+    "sheypoor": {
+        "url": "https://www.sheypoor.com/api/v10.0.0/auth/send",
+        "data": {
+            "username": "numnum"
+        }
+    },
+
     "digikala": {
         "url": "https://api.digikala.com/v1/user/authenticate/",
         "data": {
