@@ -10,7 +10,6 @@ from fake_useragent import UserAgent
 
 range_n_limit = 100
 cunt = 0
-services_rm = ['iranjahanpoosh']
 services = ['rirabook', 'doctoreto', 'SMS.ir', 'vipshop', 'digikala', 'okala', 'basalam', 'banimode', ]
 
 
@@ -43,14 +42,15 @@ def send(phone_number, range_n):  # add prvity Change IP
     if int(range_n) <= range_n_limit:
         for i in range(1, int(range_n) + 1):
             cunt = i
+            
             # +_+_+_+ User Agent Generator +_+_+_+
             ua = UserAgent()
             headers = {'User-Agent': ua.random}
             
             for service in services:
-                # if service in services_rm:
-                #     phone_number = phone_number.lstrip('0')
-                #     print(phone_number)
+                #+# if service in services_rm:
+                #+#     phone_number = phone_number.lstrip('0')
+                #+#     print(phone_number)
 
                 # convert service list to str
                 service_name = str(service)
