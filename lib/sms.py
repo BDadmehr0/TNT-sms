@@ -9,7 +9,6 @@ from lib import Banner
 from fake_useragent import UserAgent
 
 range_n_limit = 100
-cunt = 0
 services = ['rirabook', 'doctoreto', 'SMS.ir', 'vipshop', 'digikala', 'okala', 'basalam', 'banimode', ]
 
 
@@ -22,7 +21,6 @@ def validate_phone_number(phone_number):
 
 
 def send(phone_number, range_n):  # add prvity Change IP
-    global cunt
 
     # Validate phone number
     if not (phone_number):
@@ -37,19 +35,17 @@ def send(phone_number, range_n):  # add prvity Change IP
         rep_data = str(data)
 
 
-    if int(range_n) <= range_n_limit:
+    if range_n <= range_n_limit:
         for i in range(1, int(range_n) + 1):
-            cunt = i
 
             # +_+_+_+ User Agent Generator +_+_+_+
             ua = UserAgent()
             headers = {'User-Agent': ua.random}
             
             for service in services:
-                cunt += 1
-                #+# if service in services_rm:
-                #+#     phone_number = phone_number.lstrip('0')
-                #+#     print(phone_number)
+                # + # if service in services_rm:
+                # + #     phone_number = phone_number.lstrip('0')
+                # + #     print(phone_number)
 
                 # convert service list to str
                 service_name = str(service)
@@ -60,8 +56,8 @@ def send(phone_number, range_n):  # add prvity Change IP
                 url = url_data['url']
                 req_data = url_data['data']
 
-                req = requests.post(url=url, data=req_data, headers=headers)
-                print(req, cunt)
+                # req = requests.post(url=url, data=req_data, headers=headers)
+                # print(req, cunt)
                 
     else:
         print('Send Range Limit 100')
