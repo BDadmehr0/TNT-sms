@@ -11,7 +11,7 @@ from fake_useragent import UserAgent
 range_n_limit = 100
 cunt = 0
 services_rm = ['iranjahanpoosh']
-services = ['rirabook', 'iranjahanpoosh', 'doctoreto', 'SMS.ir', 'vipshop', 'digikala', 'okala', 'basalam', 'banimode', ]
+services = ['rirabook', 'doctoreto', 'SMS.ir', 'vipshop', 'digikala', 'okala', 'basalam', 'banimode', ]
 
 
 def validate_phone_number(phone_number):
@@ -39,6 +39,7 @@ def send(phone_number, range_n):  # add prvity Change IP
         rep_data = rep_data.replace('numnum', phone_number)
         print(phone_number)
 
+
     if int(range_n) <= range_n_limit:
         for i in range(1, int(range_n) + 1):
             cunt = i
@@ -63,6 +64,7 @@ def send(phone_number, range_n):  # add prvity Change IP
 
                 req = requests.post(url=url, data=req_data, headers=headers)
                 print(req, cunt)
+                
     else:
         print('Send Range Limit 100')
 

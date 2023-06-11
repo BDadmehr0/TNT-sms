@@ -7,30 +7,10 @@
         }
     },
 
-    "iranjahanpoosh": {
-        "url": "https://iranjahanpoosh.com/wp-admin/admin-ajax.php",
-        "data": {
-            "digt_countrycode": "%2B98",
-            "phone": "9050756226",
-            "digits_reg_name": "usernamename",
-            "digits_reg_password": "passwordword",
-            "digits_process_register": "1",
-            "instance_id": "355dbb36c6e4eb225d81183a543dbbe1",
-            "optional_data": "optional_data",
-            "action": "digits_forms_ajax",
-            "type": "register",
-            "dig_otp": "",
-            "digits": "1",
-            "digits_redirect_page": "-1",
-            "digits_form": "859b4679af",
-            "_wp_http_referer": "%2F%3Flogin%3Dtrue%26page%3D1%26redirect_to%3Dhttps%253A%252F%252Firanjahanpoosh.com%252F"
-        }
-    },
-
     "kellowear": {
         "url": "https://kellowear.com/api/v1/sessions/login_request",
         "data": {
-            "mobile_phone": "09050756226"
+            "mobile_phone": "numnum"
         }
     },
 
@@ -38,14 +18,14 @@
     "snappfood": {
         "url": "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.1&UDID=23edaab7-b7a3-4c6f-8046-665d0f8ff3be&locale=fa",
         "data": {
-            "cellphone": "09050756226"
+            "cellphone": "numnum"
         }
     },
 
     "snapp": {
         "url": "https://api.snapp.ir/api/v1/sms/link",
         "data": {
-            "phone": "09050756226"
+            "phone": "numnum"
         }
     },
 
