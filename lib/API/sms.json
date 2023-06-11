@@ -55,23 +55,6 @@
         }
     },
 
-    "okala": {
-        "url": "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
-        "data": {
-            "confirmTerms": "true",
-            "deviceTypeCode": "0",
-            "mobile": "numnum",
-            "notRobot": "false"
-        }
-    },
-
-    "basalam": {
-        "url": "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
-        "data": {
-            "client_id": "11",
-            "mobile": "numnum"
-        }
-    },
 
     "bamiloshop": {
         "url": "https://apollo.digify.shop/graphql",
