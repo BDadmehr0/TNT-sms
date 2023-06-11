@@ -1,5 +1,4 @@
 # Dadmher - Garfox
-
 try:
     import platform
     import os
