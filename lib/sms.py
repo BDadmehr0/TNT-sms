@@ -45,9 +45,11 @@ def send(phone_number, range_n):  # add prvity Change IP
             # +_+_+_+ User Agent Generator +_+_+_+
             ua = UserAgent()
             headers = {'User-Agent': ua.random}
+            
             for service in services:
-                if service in services_rm:
-                    phone_number = phone_number.lstrip('0')
+                # if service in services_rm:
+                #     phone_number = phone_number.lstrip('0')
+                #     print(phone_number)
 
                 # convert service list to str
                 service_name = str(service)
