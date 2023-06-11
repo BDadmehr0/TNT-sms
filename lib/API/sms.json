@@ -6,14 +6,6 @@
         }
     },
 
-
-    "SMS.ir": {
-	    "url": "https://app.sms.ir/auth/sign-up?mobile=numnum",
-	    "data": {
-	        "mobile": "numnum"
-    	}
-    },
-
     "digikala": {
         "url": "https://api.digikala.com/v1/user/authenticate/",
         "data": {

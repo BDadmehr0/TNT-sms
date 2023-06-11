@@ -1,7 +1,7 @@
 from requests import post
-url = "https://api.snapp.ir/api/v1/sms/link"
+url = "https://app.sms.ir/auth/sign-up?mobile=09050756226"
 data = {
-    "phone": "09050756226"
+    "mobile": "09050756226"
 }
 
 res = post(url=url, data=data)

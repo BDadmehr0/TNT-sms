@@ -7,7 +7,7 @@ import re
 from fake_useragent import UserAgent
 
 range_n_limit = 100
-services = ['rirabook', 'kellowear', 'snappfood', 'snapp', 'SMS.ir', 'vipshop', 'digikala', 'bamiloshop', 'banimode', 'doctoreto']
+services = ['snapp', 'SMS.ir', 'digikala']
 
 
 def validate_phone_number(phone_number):
