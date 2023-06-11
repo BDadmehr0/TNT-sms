@@ -1,27 +1,4 @@
 {
-    "rirabook": {
-        "url": "https://rirabook.com/loginAth",
-        "data": {
-            "mobile1": "numnum",
-            "loginbt1": ""
-        }
-    },
-
-    "kellowear": {
-        "url": "https://kellowear.com/api/v1/sessions/login_request",
-        "data": {
-            "mobile_phone": "numnum"
-        }
-    },
-
-
-    "snappfood": {
-        "url": "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.1&UDID=23edaab7-b7a3-4c6f-8046-665d0f8ff3be&locale=fa",
-        "data": {
-            "cellphone": "numnum"
-        }
-    },
-
     "snapp": {
         "url": "https://api.snapp.ir/api/v1/sms/link",
         "data": {
@@ -37,53 +14,12 @@
     	}
     },
 
-    "vipshop": {
-        "url": "https://vipshop.flowers/wp-admin/admin-ajax.php",
-        "data": {
-            "action": "logini_first",
-            "login": "numnum"
-        }
-
-    },
-
     "digikala": {
         "url": "https://api.digikala.com/v1/user/authenticate/",
         "data": {
             "backUrl": "/",
             "otp_call": "false",
             "username": "numnum"
-        }
-    },
-
-
-    "bamiloshop": {
-        "url": "https://apollo.digify.shop/graphql",
-        "data": {
-            "operationName":"OtpSendV2",
-            "variables": {
-                "content": {
-                    "phone_number": "numnum",
-                    "is_forget_password": "false"
-                    }
-                },
-            "query": "mutation OtpSendV2($content: OTPSendContent) {\n  customer {\n    otpSendV2(content: $content) {\n      is_forget_password\n      is_register\n      __typename\n    }\n    __typename\n  }\n}"
-        }
-    },
-
-    "banimode": {
-	    "url": "https://mobapi.banimode.com/api/v2/auth/request",
-        "data": {
-            "phone": "numnum"
-        }
-    },
-    
-
-    "doctoreto": {
-	    "url": "https://api.doctoreto.com/api/web/patient/v1/accounts/register",
-        "data": {
-            "mobile": "numnum",
-            "country_id": "205",
-            "captcha": ""
         }
     }
 
