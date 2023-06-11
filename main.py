@@ -32,7 +32,7 @@ def sms_menu():
         menu_i = input('menu-$ ')
         if menu_i == '1':
             phone_number = input('Phone-Number$: ')
-            range_n = int(input('Send-Reange$: '))
+            range_n = input('Send-Reange$: ')
 
             send(phone_number,range_n)
         elif menu_i == '2':
