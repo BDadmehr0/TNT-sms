@@ -25,7 +25,7 @@ def send(phone_number, range_n):  # add prvity Change IP
     global cunt
 
     # Validate phone number
-    if not validate_phone_number(phone_number):
+    if not (phone_number):
         print("Invalid Phone number")
         return
 
@@ -33,28 +33,26 @@ def send(phone_number, range_n):  # add prvity Change IP
     with open('./lib/API/sms.json') as json_file:
         data = json.load(json_file)
 
-        # Replace phone number in data
+
         rep_data = str(data)
-        rep_data = rep_data.replace('numnum', phone_number)
-        print(phone_number)
 
 
     if int(range_n) <= range_n_limit:
         for i in range(1, int(range_n) + 1):
             cunt = i
-            
+
             # +_+_+_+ User Agent Generator +_+_+_+
             ua = UserAgent()
             headers = {'User-Agent': ua.random}
             
             for service in services:
+                cunt += 1
                 #+# if service in services_rm:
                 #+#     phone_number = phone_number.lstrip('0')
                 #+#     print(phone_number)
 
                 # convert service list to str
                 service_name = str(service)
-                print(service_name)
 
                 # load apos in sms.json
                 url_data = data[service_name]
