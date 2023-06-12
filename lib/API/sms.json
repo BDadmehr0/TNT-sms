@@ -1,4 +1,41 @@
 {
+    "pakhsh": {
+        "url": "https://www.pakhsh.shop/wp-admin/admin-ajax.php",
+        "data": {
+            "digt_countrycode": "+98",
+            "phone": "09050756226",
+            "digits_reg_name": "dadmehr",
+            "digits_process_register": "1",
+            "sms_otp": "",
+            "digits_otp_field": "1",
+            "instance_id": "1154b2b327c31c49e4271a4bafddd354",
+            "optional_data": "optional_data",
+            "action": "digits_forms_ajax",
+            "type": "register",
+            "dig_otp": "otp",
+            "digits": "1",
+            "digits_redirect_page":	"//www.pakhsh.shop/?page=1&redirect_to=https%3A%2F%2Fwww.pakhsh.shop%2F",
+            "digits_form": "6c4d0ca3e6",
+            "_wp_http_referer":	"/?login=true&page=1&redirect_to=https%3A%2F%2Fwww.pakhsh.shop%2F",
+            "container": "digits_protected",
+            "sub_action": "sms_otp"
+        }
+    },
+
+    "lendo": {
+        "url": "https://api.lendo.ir/api/customer/auth/send-otp",
+        "data": {
+            "mobile":"09050756226"
+        }
+    },
+
+    "banimode": {
+        "url": "https://mobapi.banimode.com/api/v2/auth/request",
+        "data": {
+            "phone":"09050756226"
+        }
+    },
+
     "snappmarket": {
         "url": "https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone=numnum",
         "data": {
