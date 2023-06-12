@@ -1,8 +1,8 @@
 from requests import post
 
-link = 'https://api.lendo.ir/api/customer/auth/send-otp'
+link = 'https://www.buskool.com/send_verification_code'
 data = {
-    "mobile":"09050756226"
+    "phone":"09050756226"
 }
 
 print(post(url=link, data=data))
