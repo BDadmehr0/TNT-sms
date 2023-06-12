@@ -1,4 +1,11 @@
 {
+    "snappmarket": {
+        "url": "https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone=numnum",
+        "data": {
+            "": ""
+        }
+    },
+
     "snapp": {
         "url": "https://api.snapp.ir/api/v1/sms/link",
         "data": {
