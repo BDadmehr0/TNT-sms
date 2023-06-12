@@ -3,8 +3,8 @@
         "url": "https://www.pakhsh.shop/wp-admin/admin-ajax.php",
         "data": {
             "digt_countrycode": "+98",
-            "phone": "09050756226",
-            "digits_reg_name": "dadmehr",
+            "phone": "numnum",
+            "digits_reg_name": "GarfoxTeam",
             "digits_process_register": "1",
             "sms_otp": "",
             "digits_otp_field": "1",
