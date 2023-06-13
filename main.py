@@ -72,11 +72,14 @@ def main():
 
 
 if __name__ == "__main__":
-    os.system('clear')
-    banner()
+    try:
+        os.system('clear')
+        banner()
     
-    sys_check()
-    os.system('clear')
+        sys_check()
+        os.system('clear')
 
-    banner()
-    main()
+        banner()
+        main()
+    except KeyboardInterrupt:
+        print('Bye Bye!')

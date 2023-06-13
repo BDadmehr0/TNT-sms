@@ -29,13 +29,13 @@ def send(phone_number, range_n):  # add prvity Change IP
 
     if int(range_n) <= range_n_limit:
         for i in range(int(range_n)):
-            cunt += 1
 
             # +_+_+_+ User Agent Generator +_+_+_+
             ua = UserAgent()
             headers = {'User-Agent': ua.random}
 
             for service in services:
+                cunt += 1
                 url_data = loaded_json[service]
                 url = url_data['url']
                 req_data = url_data.get('data', {})
@@ -47,8 +47,8 @@ def send(phone_number, range_n):  # add prvity Change IP
 
                 req = requests.post(url=url, data=req_data, headers=headers)
                 if req.status_code == 200:
-                    print(C.GREEN+cunt+' Send',C.WHITE)
+                    print(C.GREEN,cunt,' Send',C.WHITE)
                 else:
-                    print(C.RED+cunt+" Failed :", req.status_code,C.WHITE)
+                    print(C.RED,cunt," Failed :", req.status_code,C.WHITE)
     else:
         print('Send Range Limit 100')
