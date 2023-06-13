@@ -25,14 +25,14 @@
     "lendo": {
         "url": "https://api.lendo.ir/api/customer/auth/send-otp",
         "data": {
-            "mobile":"09050756226"
+            "mobile":"numnum"
         }
     },
 
     "banimode": {
         "url": "https://mobapi.banimode.com/api/v2/auth/request",
         "data": {
-            "phone":"09050756226"
+            "phone":"numnum"
         }
     },
 
