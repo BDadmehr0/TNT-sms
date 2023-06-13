@@ -1,6 +1,5 @@
 import requests
 import os
-from colorama import Fore as C
 
 end = 2057
 start = 366
@@ -33,4 +32,4 @@ if __name__ == "__main__":
             
 
         except requests.exceptions.ConnectionError:
-            print(C.YELLOW+'requests.exceptions.ConnectionError: Check Your intetnet an try again',C.WHITE)
+            print('requests.exceptions.ConnectionError: Check Your intetnet an try again')
