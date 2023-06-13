@@ -2,11 +2,10 @@ from colorama import Fore as c
 def banner():
 
     bomb = """
-        ,--.!,
-     __/   -*-
-   ,d08b.   |
-   0088MM     
-   `9MMP'  """
+   ,--.!,  
+,d08b.-*-
+0088MM |    
+`9MMP'"""
     
 #   _____ _  _ _____            
 #  |_   _| \| |_   _|___ __  ___
@@ -14,7 +13,7 @@ def banner():
 #    |_| |_|\_| |_|/__/_|_|_/__/
                               
 
-    print(c.RED+' _____'+c.WHITE+' _  _ '+c.RED+'_____ '+c.WHITE+'')
-    print(c.RED+'|_   _'+c.WHITE+'| \| |'+c.RED+'_   _|'+c.WHITE+'___ __  ___ | Github BDadmehr0')
-    print(c.RED+"  | | "+c.WHITE+"| .` |"+c.RED+" | |"+c.WHITE+"(_-< '  \(_-< | TNTsms Call & SMS Spamer IR")
-    print(c.RED+'  |_| '+c.WHITE+'|_|\_|'+c.RED+' |_|'+c.WHITE+'/__/_|_|_/__/ | By BDadmehr0\n')
+    print(c.RED+' _____'+c.WHITE+' _  _ '+c.RED+'_____ '+c.WHITE+'                ,--.'+c.YELLOW+'!,  ')
+    print(c.RED+'|_   _'+c.WHITE+'| \| |'+c.RED+'_   _|'+c.WHITE+'___ __  ___ '+c.BLACK+' ,d08b.'+c.YELLOW+'-'+c.RED+'*'+c.YELLOW+'-   ')
+    print(c.RED+"  | | "+c.WHITE+"| .` |"+c.RED+" | |"+c.WHITE+"(_-< '  \(_-< "+c.BLACK+" 0088MM "+c.YELLOW+"| |TNTsms Call & SMS Spamer IR")
+    print(c.RED+'  |_| '+c.WHITE+'|_|\_|'+c.RED+' |_|'+c.WHITE+'/__/_|_|_/__/ '+c.BLACK+' `9MMP    |By BDadmehr0\n')
