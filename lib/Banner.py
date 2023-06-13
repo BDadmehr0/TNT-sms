@@ -1,6 +1,13 @@
 from colorama import Fore as c
 def banner():
 
+    bomb = """
+        ,--.!,
+     __/   -*-
+   ,d08b.   |
+   0088MM     
+   `9MMP'  """
+
     print(c.RED+'@@@@@@'+c.WHITE+' @@@  @@'+c.RED+' @@@@@@'+c.WHITE+'  @@@@@@ @@@@@@@@@@   @@@@@@')
     print(c.RED+'  @@! '+c.WHITE+' @@!@!@@'+c.RED+'   @@! '+c.WHITE+' !@@     @@! @@! @@! !@@')
     print(c.RED+'  @!! '+c.WHITE+' @!@@!!@'+c.RED+'   @!! '+c.WHITE+'  !@@!!  @!! !!@ @!@  !@@!!  | Github BDadmehr0')
