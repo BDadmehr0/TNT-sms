@@ -15,6 +15,6 @@ def banner():
                               
 
     print(c.RED+' _____'+c.WHITE+' _  _ '+c.RED+'_____ '+c.WHITE+'')
-    print(c.RED+'|_   _'+c.WHITE+'| \| |'+c.RED+'_   _|'+c.WHITE+' | Github BDadmehr0')
-    print(c.RED+'  | | '+c.WHITE+'| .` |'+c.RED+' | |'+c.WHITE+' | TNTsms Call & SMS Spamer IR')
-    print(c.RED+'  |_| '+c.WHITE+'|_|\_|'+c.RED+' |_|'+c.WHITE+' | By BDadmehr0\n')
+    print(c.RED+'|_   _'+c.WHITE+'| \| |'+c.RED+'_   _|'+c.WHITE+'___ __  ___ | Github BDadmehr0')
+    print(c.RED+"  | | "+c.WHITE+"| .` |"+c.RED+" | |"+c.WHITE+"(_-< '  \(_-< | TNTsms Call & SMS Spamer IR")
+    print(c.RED+'  |_| '+c.WHITE+'|_|\_|'+c.RED+' |_|'+c.WHITE+'/__/_|_|_/__/ | By BDadmehr0\n')
