@@ -9,7 +9,6 @@ from fake_useragent import UserAgent
 range_n_limit = 100
 services = ['pakhsh', 'lendo', 'banimode', 'snappmarket', 'snapp', 'sheypoor', 'digikala']
 
-
 def validate_phone_number(phone_number):
     pattern = r'^09\d{9}$'
     return re.match(pattern, phone_number) is not None
@@ -17,6 +16,7 @@ def validate_phone_number(phone_number):
 
 def send(phone_number, range_n):  # add prvity Change IP
     cunt = 0
+    
 
     # Validate phone number
     if not phone_number:
