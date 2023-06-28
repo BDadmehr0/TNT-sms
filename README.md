@@ -17,13 +17,17 @@ We want to extract many APIs from Iranian sites and use them to send SMS. Also, 
 
 ```bash
 chmod +x ./install.sh
-sudo ./install.sh 
+sudo ./install.sh # install to /usr/local/bin/
+sudo tntsms.sh
 ```
 
 ## Usage
 
-```bash
-sudo tntsms.sh
+```python
+from lib.sms import send
+
+num = '09050756226'
+send(range_n=15, phone_number=num)
 ```
 
 ## Contributing
