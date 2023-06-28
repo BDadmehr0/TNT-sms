@@ -49,7 +49,7 @@
             "phone": "numnum"
         }
     },
-
+    
     "sheypoor": {
         "url": "https://www.sheypoor.com/api/v10.0.0/auth/send",
         "data": {
@@ -64,6 +64,143 @@
             "otp_call": "false",
             "username": "numnum"
         }
-    }
+    },
+    
+    "itoll": {
+        "url":"https://app.itoll.com/api/v1/auth/login",
+        "data": {
+            "mobile": "numnum"
+        }
+    },
 
+    "tapsi": {
+        "url": "https://api.tapsi.cab/api/v2.2/user",
+        "data": {
+            "credential": {
+                "phoneNumber":"numnum",
+                "role":"PASSENGER"
+            },
+            "otpOption":"SMS"
+        }
+    },
+
+    "sibche": {
+        "url": "https://api.sibche.com/profile/sendCode",
+        "data": {
+            "mobile":"numnum"
+        }
+    },
+
+    "zarinpal": {
+        "url": "https://next.zarinpal.com/api/oauth/register",
+        "data": {
+            "first_name":"test",
+            "last_name":"test",
+            "cell_number":"numnum"
+        }
+    },
+
+    "snappbox": {
+        "url": "https://app.snapp-box.com/api/v2/auth/otp/send",
+        "data": {
+            "phoneNumber": "numnum"
+        }
+    },
+
+    "snappfood": {
+        "url": "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.794&long=53.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.1&UDID=53e13b13-8b47-43ed-bf93-d7343a7b8d0f&locale=en",
+        "data": {
+            "cellphone": "numnum"
+        }
+    },
+
+    "safaremoon": {
+        "url": "https://api1.safaremoon.com/auth/login",
+        "data": {
+            "phoneNumber":"numnum"
+        }
+    },
+
+    "saapa": {
+        "url": "https://uiapi2.saapa.ir/api/otp/sendCode",
+        "data": {
+            "mobile":"numnum",
+            "from_meter_buy":false
+        }
+    },
+
+    "okala": {
+        "url": "https://api-react.okala.com/C/CustomerAccount/OTPRegister",
+        "data": {
+            "mobile":"numnum",
+            "deviceTypeCode":0,
+            "confirmTerms":true,
+            "notRobot":false
+        }
+    },
+
+    "timcheh": {
+        "url": "https://api.timcheh.com/auth/otp/send",
+        "data": {
+            "mobile":"numnum"
+        }
+    },
+
+    "honari": {
+        "url": "https://auth.honari.com/api/check-phone-number",
+        "data": {
+            "username":"numnum"
+        }
+    },
+
+    "mydigipay": {
+        "url": "https://www.mydigipay.com/digipay/api/users/send-sms",
+        "data": {
+            "cellNumber":"numnum",
+            "device": {
+                "deviceId":"2750bc42-702e-4cbe-bae5-798f171389e1",
+                "deviceModel":"Unknown/Firefox",
+                "deviceAPI":"WEB_BROWSER",
+                "osName":"WEB"
+            }
+        }
+    },
+
+    "ketabchi": {
+        "url": "https://ketabchi.com/api/v1/auth/requestVerificationCode",
+        "data": {
+            "auth": {
+                "phoneNumber":"numnum"
+            }
+        }
+    },
+
+    "komodaa": {
+        "url": "https://api.komodaa.com/api/v2.6/loginRC/request",
+        "data": {
+            "phone_number":"numnum"
+        }
+    },
+
+    "taaghche": {
+        "url": "https://gw.taaghche.com/v4/site/auth/login",
+        "data": {
+            "contact":"numnum",
+            "forceOtp":false
+        }
+    },
+
+    "azki": {
+        "url": "https://www.azki.com/api/vehicleorder/v2/app/auth/check-login-availability/",
+        "data": {
+            "phoneNumber":"numnum"
+        }
+    },
+
+    "drdr": {
+        "url": "https://drdr.ir/api/v3/auth/login/mobile/init",
+        "data": {
+            "mobile":"numnum"
+        }
+    }
 }
