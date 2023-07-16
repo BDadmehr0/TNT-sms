@@ -23,15 +23,6 @@ send(range_n=15, phone_number=num)
 
 ## Contributing
 
-Fa
-
-درخواست کشش استقبال می شود. برای تغییرات عمده، لطفاً ابتدا یک موضوع را باز کنید
-برای بحث در مورد آنچه که می خواهید تغییر دهید.
-
-لطفاً مطمئن شوید که آزمایشات را در صورت لزوم به روز کنید.
-
-En
-
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
