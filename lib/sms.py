@@ -405,115 +405,27 @@ def send(phone_number):  #TODO: add prvity Change IP
     print("Service   Status")
     try:
         pakhsh(p=phone_number)
-    except:
-        pass
-
-    try:
         lendo(p=phone_number)
-    except:
-        pass
-
-    try:
         banimode(p=phone_number)
-    except:
-        pass
-
-    try:
         snappmarket(p=phone_number)
-    except:
-        pass
-
-    try:
         snapp(p=phone_number)
-    except:
-        pass
-
-    try:
         sheypoor(p=phone_number)
-    except:
-        pass
-
-    try:
         digikala(p=phone_number)
-    except:
-        pass
-
-    try:
         itoll(p=phone_number)
-    except:
-        pass
-
-    try:
         tapsi(p=phone_number)
-    except:
-        pass
-    
-    try:
         sibche(p=phone_number)
-    except:
-        pass
-
-    try:
         zarinpal(p=phone_number)
-    except:
-        pass
-
-    try:
         snappbox(p=phone_number)
-    except:
-        pass
-
-    try:
         safaremoon(p=phone_number)
-    except:
-        pass
-    
-    try:
         saapa(p=phone_number)
-    except:
-        pass
-
-    try:
         okala(p=phone_number)
-    except:
-        pass
-
-    try:
         timcheh(p=phone_number)
-    except:
-        pass
-
-    try:
         honari(p=phone_number)
-    except:
-        pass
-
-    try:
         mydigipay(p=phone_number)
-    except:
-        pass
-
-    try:
         ketabchi(p=phone_number)
-    except:
-        pass
-
-    try:
         komodaa(p=phone_number)
-    except:
-        pass
-
-    try:
         taaghche(p=phone_number)
-    except:
-        pass
-
-    try:
         azki(p=phone_number)
-    except:
-        pass
-
-    try:
         drdr(p=phone_number)
     except:
         pass
