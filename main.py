@@ -18,12 +18,10 @@ from lib.sms import send
 def sys_check():
     os_n = platform.system()
     if os_n == 'Linux':
-        print(c.GREEN+'System-Guard: Check and accepted')
-        sleep(3)
+        return c.GREEN+'System-Guard: Check and accepted'
     else:
-        print(c.RED+'System_Guard: Check and not accepted')
-        sleep(3)
-        exit()
+        return c.RED+'System_Guard: Check and not accepted'
+    
 
 def main():
     print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' SMS')
