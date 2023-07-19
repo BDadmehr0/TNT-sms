@@ -5,7 +5,7 @@ from colorama import Fore as c
 from requests import get
 
 def banner():
-   versioan = get('https://raw.githubusercontent.com/BDadmehr0/TNT-sms/main/data/.V').text
+   versioan = get('https://raw.githubusercontent.com/BDadmehr0/TNT-sms/main/lib/.V').text
    bomb = """
       ,--.!,  
    ,d08b.-*-   
