@@ -209,7 +209,29 @@
     "esam": {
         "url": "https://api.esam.ir/api/account/SendRecoveryCode",
         "data": {
-            "input": "09050756226"
+            "input": "numnum"
         }
+    },
+
+    "iranjahanpoosh": {
+        "url": "https://iranjahanpoosh.com/wp-admin/admin-ajax.php",
+        "data": {
+            "digt_countrycode": "+98",
+            "phone": "numnum",
+            "digits_reg_name": "namename",
+            "digits_reg_password": "asdasdasdasd",
+            "digits_process_register": "1",
+            "instance_id": "355dbb36c6e4eb225d81183a543dbbe1",
+            "optional_data": "optional_data",
+            "action": "digits_forms_ajax",
+            "type": "register",
+            "dig_otp": "",
+            "digits": "1",
+            "digits_redirect_page": "-1",
+            "digits_form": "859b4679af",
+            "_wp_http_referer": "/?login=true&page=1&redirect_to=https%3A%2F%2Firanjahanpoosh.com%2F"
+        },
+        "compressed": true
     }
+    
 }

