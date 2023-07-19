@@ -204,5 +204,12 @@
         "data": {
             "mobile":"numnum"
         }
+    },
+
+    "esam": {
+        "url": "https://api.esam.ir/api/account/SendRecoveryCode",
+        "data": {
+            "input": "09050756226"
+        }
     }
 }

@@ -400,6 +400,19 @@ def send(phone_number):  #TODO: add prvity Change IP
         else:
             print("{}   {}   Fail".format(service, req.status_code))
 
+    def esam(p):
+        service = 'esam'
+        esam_url = 'https://api.esam.ir/api/account/SendRecoveryCode'
+        esam_data = {
+            'input': f'{p}',
+        }
+
+        req = requests.post(esam_url, data=esam_data)
+        if req.status_code == 200:
+            print("{}   {}   Send".format(service, req.status_code))
+        else:
+            print("{}   {}   Fail".format(service, req.status_code))
+
 
     # RUN
     print("Service   Status")
