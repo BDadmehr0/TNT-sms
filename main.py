@@ -25,8 +25,8 @@ def sys_check():
 
 def main():
     print(c.WHITE+' ['+c.RED+'1'+c.WHITE+']'+c.RED+' SMS')
-    print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' Call')
-    print(c.WHITE+' ['+c.RED+'3'+c.WHITE+']'+c.RED+' Email')
+    print(c.WHITE+' ['+c.RED+'2'+c.WHITE+']'+c.RED+' Call (coming soon)')
+    print(c.WHITE+' ['+c.RED+'3'+c.WHITE+']'+c.RED+' Email (coming soon)')
     print(c.WHITE+' ['+c.RED+'00'+c.WHITE+']'+c.RED+' Exit'+c.RESET+'\n')
 
     username = platform.node()
