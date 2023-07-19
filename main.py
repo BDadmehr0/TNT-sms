@@ -1,32 +1,19 @@
+# BDadmehr0-Garfox
+#    _____ _  _ _____            
+#   |_   _| \| |_   _|___ __  ___
+#     | | | .` | | |(_-< '  \(_-<
+#     |_| |_|\_| |_|/__/_|_|_/__/
+
 import platform
 import os
 from time import sleep
 from colorama import Fore as c
-from lib.Banner import *
-from lib.sms import send
 from termcolor import colored, cprint
 from requests import get
 
-# def banner():
-#    versioan = get('https://raw.githubusercontent.com/BDadmehr0/TNT-sms/main/data/.V').text
-#    bomb = """
-#       ,--.!,  
-#    ,d08b.-*-   
-#    0088MM |    
-#    `9MMP'"""
+from lib.Banner import *
+from lib.sms import send
    
-#    #   _____ _  _ _____            
-#    #  |_   _| \| |_   _|___ __  ___
-#    #    | | | .` | | |(_-< '  \(_-<
-#    #    |_| |_|\_| |_|/__/_|_|_/__/
-                           
-#    BOMB_SHOP_OPEN = colored("\t\t\t\t\t\t\tBomb shop open", "red", attrs=["reverse", "blink"])
-
-#    print(c.RED+' _____'+c.WHITE+' _  _ '+c.RED+'_____ '+c.WHITE+'                ,--.'+c.YELLOW+'!,  ')
-#    print(c.RED+'|_   _'+c.WHITE+'| \| |'+c.RED+'_   _|'+c.WHITE+'___ __  ___ '+c.WHITE+' ,d08b.'+c.YELLOW+'-'+c.RED+'*'+c.YELLOW+'-   ')
-#    print(c.RED+"  | | "+c.WHITE+"| .` |"+c.RED+" | |"+c.WHITE+"(_-< '  \(_-< "+c.WHITE+" 0088MM "+c.YELLOW+"|"+c.WHITE+" | TNTsms Call & SMS Spamer IR")
-#    print(c.RED+'  |_| '+c.WHITE+'|_|\_|'+c.RED+' |_|'+c.WHITE+'/__/_|_|_/__/ '+c.WHITE+' `9MMP '+c.WHITE+'   | By BDadmehr0 & V {}\n'.format(versioan),BOMB_SHOP_OPEN)
-#    # cprint('Bomb Shop Open', 'black', 'on_light_red', ['reverse', 'blink'])
 
 def sys_check():
     os_n = platform.system()
@@ -61,10 +48,6 @@ def main():
 
 
 if __name__ == "__main__":
-
     banner()
     sys_check()
-    os.system('clear')
-    banner()
     main()
-    
