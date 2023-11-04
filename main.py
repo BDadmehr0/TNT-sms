@@ -11,7 +11,7 @@ from colorama import Fore as c
 from termcolor import colored, cprint
 from requests import get
 
-from lib.Banner import *
+from lib.banner import *
 from lib.sms import send
    
 
