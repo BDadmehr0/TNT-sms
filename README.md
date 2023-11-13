@@ -1,14 +1,5 @@
 # About
-
-
-       _____ _  _ _____            
-       
-     |_   _| \| |_   _|___ __  ___
    
-       | | | .` | | |(_-< '  \(_-<
-   
-       |_| |_|\_| |_|/__/_|_|_/__/
-          
 TNT sms |  Call &amp; SMS Bomber for Iranain Number
 
 TNT sms is a program for Linux that will be transferred to Termux in the future
