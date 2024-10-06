@@ -1,9 +1,3 @@
-# BDadmehr0-Garfox
-#    _____ _  _ _____            
-#   |_   _| \| |_   _|___ __  ___
-#     | | | .` | | |(_-< '  \(_-<
-#     |_| |_|\_| |_|/__/_|_|_/__/
-
 import platform
 import os
 from time import sleep
